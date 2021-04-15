@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Clever-template2</title>
+        <link href="./assets/css/normalize.css" rel="stylesheet" />
+        <link href="./assets/css/bundle.css" rel="stylesheet" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header class="header"></header>
+        <main class="main">
+            <div class="wrapper">
+                <section class="prices">
+                    <div class="breadcrumb">Home &gt; Pages &gt; <span class="breadcrumb--activ">Prices</span></div>
+                    <h1 class="prices__title">Prices</h1>
+                    <h2 class="prices__descr">The following information s considered when charging the order:</h2>
+
+                    <div class="prices__images">
+                        <div class="prices__images-item">
+                            <img class="prices__images-item-bg" src="./assets/images/clock-cloud.png" alt="Cloud" />
+                            <img class="prices__images-item-img" src="./assets/images/clock.png" alt="Clock" />
+                            <div class="prices__images-item-descr">Your duedate</div>
+                        </div>
+                        <div class="prices__images-item">
+                            <img
+                                class="prices__images-item-bg"
+                                src="./assets/images/academitian-cap-cloud.png"
+                                alt="Cloud"
+                            />
+                            <img class="prices__images-item-img" src="./assets/images/academician-cap.png" alt="Cap" />
+                            <div class="prices__images-item-descr">Academic level</div>
+                        </div>
+                        <div class="prices__images-item">
+                            <img class="prices__images-item-bg" src="./assets/images/pages-cloud.png" alt="Cloud" />
+                            <img class="prices__images-item-img" src="./assets/images/pages.png" alt="Paper" />
+                            <div class="prices__images-item-descr">Pages/words</div>
+                        </div>
+                    </div>
+
+                    <form class="prices__form">
+                        <div class="prices__input-panel">
+                            <div class="prices__input-panel-currency">
+                                <div class="prices__input-panel-title prices__input-panel-currency-title">
+                                    Select currency
+                                </div>
+                                <div class="prices__input-panel-field prices__input-panel-currency-field">
+                                    <div class="prices__input-panel-currency-item">
+                                        <input id="usd" type="radio" name="currency" checked />
+                                        <label
+                                            class="prices__input-panel-currency-label--activ prices__input-panel-currency-label"
+                                            for="usd"
+                                            >Usd</label
+                                        >
+                                    </div>
+                                    <div class="prices__input-panel-currency-item">
+                                        <input id="eur" type="radio" name="currency" />
+                                        <label class="prices__input-panel-currency-label" for="eur">Eur</label>
+                                    </div>
+                                    <div class="prices__input-panel-currency-item">
+                                        <input id="cad" type="radio" name="currency" />
+                                        <label class="prices__input-panel-currency-label" for="cad">Cad</label>
+                                    </div>
+                                    <div class="prices__input-panel-currency-item">
+                                        <input id="gbp" type="radio" name="currency" />
+                                        <label class="prices__input-panel-currency-label" for="gbp">Gbp</label>
+                                    </div>
+                                    <div class="prices__input-panel-currency-item">
+                                        <input id="aud" type="radio" name="currency" />
+                                        <label class="prices__input-panel-currency-label" for="aud">Aud</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="prices__input-panel-sevices">
+                                <label
+                                    class="prices__input-panel-title prices__input-panel-sevices-title"
+                                    for="services"
+                                    >Type of services</label
+                                >
+                                <input
+                                    class="prices__input-panel-field prices__input-panel-sevices-field"
+                                    id="services"
+                                    type="text"
+                                    name="services"
+                                    placeholder="Resume/CV services"
+                                />
+                            </div>
+
+                            <div class="prices__input-panel-level">
+                                <label class="prices__input-panel-title prices__input-panel-level-title" for="level"
+                                    >Type level</label
+                                >
+                                <div class="prices__input-panel-level-fieldWrap">
+                                    <select
+                                        class="prices__input-panel-field prices__input-panel-level-field"
+                                        id="level"
+                                        name="services"
+                                    >
+                                        <option value="Entry">Entry</option>
+                                        <option value="Entry">Entry</option>
+                                        <option value="Entry">Entry</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="prices__table">
+                            <div class="prices__table-sidebar">
+                                <div class="prices__table-sidebar--other">Other</div>
+                                <div class="prices__table-sidebar--popular">Most Popular</div>
+                            </div>
+                            <div class="prices__table-content">
+                                <div class="prices__table-row">
+                                    <h3 class="prices__table-row-title">Services</h3>
+                                    <h3 class="prices__table-cols-title">5 days</h3>
+                                    <h3 class="prices__table-cols-title">3 days</h3>
+                                    <h3 class="prices__table-cols-title">48 hourse</h3>
+                                    <h3 class="prices__table-cols-title">24 hourse</h3>
+                                </div>
+                                <div class="prices__table-row">
+                                    <div class="prices__table-row-title">Resume writing</div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$5</span><input type="radio" name="resumeWriting" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$3</span><input type="radio" name="resumeWriting" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$48</span><input type="radio" name="resumeWriting" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$24</span><input type="radio" name="resumeWriting" />
+                                    </div>
+                                </div>
+                                <div class="prices__table-row">
+                                    <div class="prices__table-row-title">Resume Editing</div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$5</span><input type="radio" name="resumeEditing" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$3</span><input type="radio" name="resumeEditing" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$48</span><input type="radio" name="resumeEditing" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$24</span><input type="radio" name="resumeEditing" />
+                                    </div>
+                                </div>
+                                <div class="prices__table-row">
+                                    <div class="prices__table-row-title">CV writing</div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$5</span><input type="radio" name="cvWriting" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$3</span><input type="radio" name="cvWriting" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$48</span><input type="radio" name="cvWriting" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$24</span><input type="radio" name="cvWriting" />
+                                    </div>
+                                </div>
+                                <div class="prices__table-row">
+                                    <div class="prices__table-row-title">CV editing</div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$5</span><input type="radio" name="cvEditing" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$3</span><input type="radio" name="cvEditing" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$48</span><input type="radio" name="cvEditing" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$24</span><input type="radio" name="cvEditing" />
+                                    </div>
+                                </div>
+                                <div class="prices__table-row">
+                                    <div class="prices__table-row-title">Cover letter writing</div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$5</span><input type="radio" name="coverLetterWriting" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$3</span><input type="radio" name="coverLetterWriting" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$48</span><input type="radio" name="coverLetterWriting" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$24</span><input type="radio" name="coverLetterWriting" />
+                                    </div>
+                                </div>
+                                <div class="prices__table-row">
+                                    <div class="prices__table-row-title">LinkedIn® Pro Bio</div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$5</span><input type="radio" name="linkedInBio" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$3</span><input type="radio" name="linkedInBio" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$48</span><input type="radio" name="linkedInBio" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$24</span><input type="radio" name="linkedInBio" />
+                                    </div>
+                                </div>
+                                <div class="prices__table-row">
+                                    <div class="prices__table-row-title">Resume/CV review</div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$5</span><input type="radio" name="ResumeCvReview" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$3</span><input type="radio" name="ResumeCvReview" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$48</span><input type="radio" name="ResumeCvReview" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$24</span><input type="radio" name="ResumeCvReview" />
+                                    </div>
+                                </div>
+                                <div class="prices__table-row">
+                                    <div class="prices__table-row-title">Basic Package: Resume + CV writing</div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$5</span><input type="radio" name="basicPackage" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$3</span><input type="radio" name="basicPackage" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$48</span><input type="radio" name="basicPackage" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$24</span><input type="radio" name="basicPackage" />
+                                    </div>
+                                </div>
+                                <div class="prices__table-row">
+                                    <div class="prices__table-row-title">
+                                        Resume Package: Resume + Cover letter writing
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$5</span><input type="radio" name="resumePackage" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$3</span><input type="radio" name="resumePackage" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$48</span><input type="radio" name="resumePackage" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$24</span><input type="radio" name="resumePackage" />
+                                    </div>
+                                </div>
+                                <div class="prices__table-row">
+                                    <div class="prices__table-row-title">CV Package: CV + cover letter writing</div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$5</span><input type="radio" name="CvPackage" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$3</span><input type="radio" name="CvPackage" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$48</span><input type="radio" name="CvPackage" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$24</span><input type="radio" name="CvPackage" />
+                                    </div>
+                                </div>
+                                <div class="prices__table-row">
+                                    <div class="prices__table-row-title">
+                                        Full Resume Package: Resume + Cover Letter + Thank-you/Follow-up Letters
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$5</span><input type="radio" name="fullResumePackage" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$3</span><input type="radio" name="fullResumePackage" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$48</span><input type="radio" name="fullResumePackage" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$24</span><input type="radio" name="fullResumePackage" />
+                                    </div>
+                                </div>
+                                <div class="prices__table-row">
+                                    <div class="prices__table-row-title">
+                                        Full CV Package: CV + Cover Letter + Thank-you/Follow-up Letters
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$5</span><input type="radio" name="fullCvPackage" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$3</span><input type="radio" name="fullCvPackage" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$48</span><input type="radio" name="fullCvPackage" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$24</span><input type="radio" name="fullCvPackage" />
+                                    </div>
+                                </div>
+                                <div class="prices__table-row">
+                                    <div class="prices__table-row-title">New! E-Cover Letter Writing</div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$5</span><input type="radio" name="E-Cover" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$3</span><input type="radio" name="E-Cover" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$48</span><input type="radio" name="E-Cover" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$24</span><input type="radio" name="E-Cover" />
+                                    </div>
+                                </div>
+                                <div class="prices__table-row">
+                                    <div class="prices__table-row-title">Online Resume Storage</div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$5</span><input type="radio" name="onlineResumeStorage" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$3</span><input type="radio" name="onlineResumeStorage" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span> $48</span><input type="radio" name="onlineResumeStorage" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$24</span><input type="radio" name="onlineResumeStorage" />
+                                    </div>
+                                </div>
+                                <div class="prices__table-row">
+                                    <div class="prices__table-row-title">
+                                        Resume Distribution to Employment Agencies
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$5</span><input type="radio" name="resumeDistribution" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$3</span><input type="radio" name="resumeDistribution" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$48</span><input type="radio" name="resumeDistribution" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$24</span><input type="radio" name="resumeDistribution" />
+                                    </div>
+                                </div>
+                                <div class="prices__table-row">
+                                    <div class="prices__table-row-title">Thank You & Follow-up Letters</div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$5</span><input type="radio" name="followUpLetters" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$3</span><input type="radio" name="followUpLetters" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$48</span><input type="radio" name="followUpLetters" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$24</span><input type="radio" name="followUpLetters" />
+                                    </div>
+                                </div>
+                                <div class="prices__table-row">
+                                    <div class="prices__table-row-title">KSAs - Knowledge, Skills, Abilities</div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$5</span><input type="radio" name="KSAs" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$3</span><input type="radio" name="KSAs" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$48</span><input type="radio" name="KSAs" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$24</span><input type="radio" name="KSAs" />
+                                    </div>
+                                </div>
+                                <div class="prices__table-row">
+                                    <div class="prices__table-row-title">Interview Tips</div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$5</span><input type="radio" name="interviewTips" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$3</span><input type="radio" name="interviewTips" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$48</span><input type="radio" name="interviewTips" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$24</span><input type="radio" name="interviewTips" />
+                                    </div>
+                                </div>
+                                <div class="prices__table-row">
+                                    <div class="prices__table-row-title">List of International Recruiting Agencies</div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$5</span><input type="radio" name="agencyList" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$3</span><input type="radio" name="agencyList" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$48</span><input type="radio" name="agencyList" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$24</span><input type="radio" name="agencyList" />
+                                    </div>
+                                </div>
+                                <div class="prices__table-row">
+                                    <div class="prices__table-row-title">List of 10 Top Job Sites</div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$5</span><input type="radio" name="topJobsSites" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$3</span><input type="radio" name="topJobsSites" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$48</span><input type="radio" name="topJobsSites" />
+                                    </div>
+                                    <div class="prices__table-row-cell">
+                                        <span>$24</span><input type="radio" name="topJobsSites" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="prices__resume">
+                            <div class="prices__resume-total">
+                                <h4 class="prices__resume-total-title">Total price:</h4>
+                                <div class="prices__resume-total-sum">$<span>0</span></div>
+                            </div>
+                            <button class="prices__resume-btn">proceed to order</button>
+                        </div>
+                    </form>
+                </section>
+
+                <aside class="free-features">
+                    <img
+                        class="free-features-img free-features-img-clouds"
+                        src="./assets/images/cloud-aside.png"
+                        alt="grass"
+                    />
+                    <div class="free-features-item">
+                        <div class="free-features-title">Free-features</div>
+                        Lorem ipsum dolor sit amet, co nsectetur adipisicing elit. Adipisci amet, architecto c umque
+                        libero magni minima no bis non sunt tempora v oluptatum!Lorem ipsit amet, co nsectetur
+                        adipisicing elit. Adipisci amet, architecto c umque libero magni minima no bis non sunt tempora
+                        v oluptatum!Lorem ipsumamet, co nsectetur adipisicing elit. Adipisci amet, architecto c umque
+                        libero magni minima no bis non sunt tempora v oluptatum!
+                    </div>
+                    <div class="free-features-item">
+                        Lorem ipsum dolor sit amet, co nsectetur adipisicing elit. Adipisci amet, architecto c umque
+                        libero magni minima no bis non sunt tempora v oluptatum!Lorem ipsit amet, co nsectetur
+                        adipisicing elit. Adipisci amet, architecto c umque libero magni minima no bis non sunt tempora
+                        v oluptat
+                    </div>
+                    <div class="free-features-item">
+                        Lorem ipsum dolor sit amet, co nsectetur adipisicing elit. Adipisci amet, architecto c umque
+                        libero magni minima no bis non sunt tempora v oluptatum!Lorem ipsit amet, co nsectetur
+                        adipisicing elit. Adipisci amet, architecto c umque libero magni minima no bis non sunt tempora
+                        v oluptat
+                    </div>
+                </aside>
+            </div>
+
+            <div class="wrapper">
+                <section class="our-stats">
+                    <div class="our-stats__title">Our stats</div>
+                    <div class="our-stats__content">
+                        <div class="our-stats__item">
+                            <div class="our-stats__item-imgGroup">
+                                <img src="./assets/images/customers.png" alt="customers" />
+                                <img class="our-stats__item-bg" src="./assets/images/customers-cloud.png" alt="Cloud" />
+                            </div>
+                            <div class="groupForMW768">
+                                <div class="our-stats__item-descr">Customers</div>
+                                <div class="our-stats__item-num">665</div>
+                            </div>
+                        </div>
+                        <div class="our-stats__item">
+                            <div class="our-stats__item-imgGroup">
+                                <img class="our-stats__item-img" src="./assets/images/witers.png" alt="Witers active" />
+                                <img class="our-stats__item-bg" src="./assets/images/witers-cloud.png" alt="Cloud" />
+                            </div>
+                            <div class="groupForMW768">
+                                <div class="our-stats__item-descr">Witers active</div>
+                                <div class="our-stats__item-num">169</div>
+                            </div>
+                        </div>
+                        <div class="our-stats__item">
+                            <div class="our-stats__item-imgGroup">
+                                <img
+                                    class="our-stats__item-img"
+                                    src="./assets/images/avarage-quality.png"
+                                    alt="Average quality"
+                                />
+                                <img
+                                    class="our-stats__item-bg"
+                                    src="./assets/images/avarage-quality-cloud.png"
+                                    alt="Cloud"
+                                />
+                            </div>
+                            <div class="groupForMW768">
+                                <div class="our-stats__item-descr">Average quality</div>
+                                <div class="our-stats__item-num"><span>score </span>9.5/10</div>
+                            </div>
+                        </div>
+                        <div class="our-stats__item">
+                            <div class="our-stats__item-imgGroup">
+                                <img
+                                    class="our-stats__item-img"
+                                    src="./assets/images/writers.png"
+                                    alt="Writers online"
+                                />
+                                <img class="our-stats__item-bg" src="./assets/images/writers-cloud.png" alt="Cloud" />
+                            </div>
+                            <div class="groupForMW768">
+                                <div class="our-stats__item-descr">Writers online</div>
+                                <div class="our-stats__item-num">73</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <img class="footer__grass footer__grass--top" src="./assets/images/grass--top.png" alt="Grass" />
+            <img class="footer__grass footer__grass--bot" src="./assets/images/grass--bot.png" alt="Grass" />
+        </footer>
+        <script src="./assets/js/bundle.js"></script>
+    </body>
+</html>

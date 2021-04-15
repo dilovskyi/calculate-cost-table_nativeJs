@@ -1,0 +1,111 @@
+.prices__input-panel {
+    &-currency {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        &-title {
+            @include controlPanelTitle;
+        }
+        &-field {
+            @include controlPanelField;
+            background-color: #fafafa;
+            position: relative;
+        }
+        & input {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+        }
+        &-label {
+            display: inline-block;
+            padding: 5px 17px;
+            color: $textColor;
+            text-transform: uppercase;
+            font-weight: 600;
+            cursor: pointer;
+            &--activ {
+                background-color: #ffff;
+                border: 1px solid $activYellow;
+                padding: 5px 16px;
+                border-radius: 15px;
+                box-sizing: border-box;
+            }
+        }
+    }
+    &-sevices {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        &-title {
+            @include controlPanelTitle;
+        }
+        &-field {
+            display: inline-block;
+            padding-left: 17px;
+            outline: none;
+            @include controlPanelField;
+            &::placeholder {
+                color: $textColor;
+                font-weight: 600;
+            }
+            &:focus {
+                border: 1px solid $activYellow;
+            }
+        }
+    }
+    &-level {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        &-title {
+            @include controlPanelTitle;
+        }
+        &-fieldWrap {
+            position: relative;
+            @include inputArrow;
+        }
+        &-field {
+            color: $textColor;
+            outline: none;
+            width: 100%;
+            border: none;
+            padding: 0 17px;
+            @include controlPanelField;
+            appearance: none;
+            &:focus {
+                border: 1px solid $activYellow;
+            }
+        }
+    }
+}
+
+@media (max-width: 1140px) {
+    .prices__input-panel {
+        & > div {
+            justify-content: center;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .prices__input-panel {
+        & > div {
+            flex-direction: column;
+        }
+        &-title {
+            font-size: 15px;
+            padding-bottom: 5px;
+        }
+        &-field {
+            min-width: 300px;
+        }
+        &-currency {
+            &-label {
+                padding: 5px 12px;
+                &--activ {
+                    padding: 5px 11px;
+                }
+            }
+        }
+    }
+}

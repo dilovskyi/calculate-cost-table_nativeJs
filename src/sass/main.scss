@@ -1,0 +1,28 @@
+@import "./base/variables";
+@import "./base/mixins";
+
+body {
+    font-family: "Nunito", sans-serif;
+    color: $textColor;
+    padding-top: 130px;
+    background-color: rgb(238, 238, 233);
+}
+@media (max-width: 768px) {
+    body {
+        padding-top: 80px;
+    }
+}
+
+@import "./base/wrapper";
+@import "./modules/header";
+@import "./modules/breadcrumb";
+
+@import "./modules/prices/prices";
+@import "./modules/prices/prices__images";
+@import "./modules/prices/prices__input-panel";
+@import "./modules/prices/prices__table";
+
+@import "./modules/ourStars";
+@import "./modules/footer";
+
+@import "./modules/free-features";

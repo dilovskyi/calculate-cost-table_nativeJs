@@ -1,0 +1,128 @@
+.prices__table {
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 10px 0;
+    max-width: 1080px;
+    &-sidebar {
+        text-align: center;
+        position: absolute;
+        display: flex;
+        top: 10px;
+        left: 10px;
+        border-radius: 6px;
+        line-height: 36px;
+        vertical-align: middle;
+        overflow: hidden;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        &--popular {
+            color: $greenText;
+            background-color: $greenBG;
+            height: 675px;
+        }
+        &--other {
+            color: $activYellow;
+            background-color: #fdf1e5;
+            height: 394px;
+        }
+    }
+    &-content {
+        margin-left: 56px;
+        font-size: 14px;
+        &:nth-child(odd) {
+            background-color: #f8f9f9;
+        }
+    }
+    &-row {
+        display: grid;
+        grid-template-columns: minmax(245px, 310px) repeat(4, 105px);
+        grid-template-rows: 51px;
+        grid-auto-rows: 51px;
+        justify-items: center;
+        align-items: center;
+        border-radius: 10px;
+        text-align: center;
+        &:nth-child(2n) {
+            background-color: #f8f9f9;
+        }
+        &-title {
+            justify-self: start;
+            text-align: start;
+            padding-left: 25px;
+        }
+        &-cell {
+            margin: 0 5px;
+            font-weight: 700;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            &:hover {
+                color: $greenText;
+            }
+            &--activ {
+                background-color: $greenBG;
+                color: $greenText;
+            }
+            & span {
+                text-align: center;
+                line-height: 51px;
+                vertical-align: middle;
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                user-select: none;
+            }
+            & input {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 1140px) {
+    .prices__table {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .prices__table {
+        margin-top: 20px;
+        &-content {
+            margin-left: 0px;
+            font-size: 14px;
+        }
+        &-sidebar {
+            display: none;
+        }
+        &-cols {
+            &-title {
+                font-size: 14px;
+                width: 40px;
+            }
+        }
+        &-row {
+            font-size: 13px;
+            grid-template-columns: minmax(100px, auto) repeat(4, minmax(48px, 70px));
+            grid-template-rows: 101px;
+            grid-auto-rows: 101;
+            &-title {
+                padding-left: 10px;
+            }
+            &-cell {
+                user-select: none;
+                & span {
+                    text-align: center;
+                    line-height: 101px;
+                }
+            }
+        }
+    }
+}

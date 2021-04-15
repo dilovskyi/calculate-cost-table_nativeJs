@@ -1,0 +1,19 @@
+.header {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fffcf7;
+    left: 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    height: 100px;
+    z-index: 10;
+    &--dark {
+        background-color: $darkGreen;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 50px;
+    }
+} ;

@@ -1,0 +1,47 @@
+.footer {
+    margin-top: 113px;
+    background-color: $darkGreen;
+    height: 410px;
+    position: relative;
+    &__grass {
+        height: 76px;
+        width: auto;
+        position: absolute;
+        &--top {
+            top: -75px;
+            left: 357px;
+        }
+        &--bot {
+            bottom: 0;
+            right: 297px;
+        }
+    }
+}
+
+@media (max-width: 1140px) {
+    .footer {
+        height: 310px;
+        &__grass {
+            &--top {
+                left: 157px;
+            }
+            &--bot {
+                right: 97px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        height: 110px;
+        &__grass {
+            &--top {
+                left: 27px;
+            }
+            &--bot {
+                right: 37px;
+            }
+        }
+    }
+}
